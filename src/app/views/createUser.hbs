@@ -1,0 +1,32 @@
+  <!-- views/signup.ejs -->
+
+  <div class="container">
+      <div class="col-sm-6 col-sm-offset-3">
+          <h1><span class="fa fa-sign-in"></span> Create User</h1>
+                  <!-- show message -->
+              {{#if message.length}}
+                  <div class="alert alert-danger">{{message}}</div>
+              {{/if}}
+          <form action="/createuser" method="post">
+              <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" id="email" placeholder="Enter email" class="form-control" name="email">
+              </div>
+              <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" id="password" placeholder="Enter password" class="form-control" name="password">
+              </div>
+              <div class="form-group">
+                  <label>FullName</label>
+                  <input type="text" id="FullName" placeholder="Enter FullName" class="form-control" name="FullName">
+              </div>
+              <div class="form-group">
+                  <label>UserName</label>
+                  <input type="text" id="UserName" placeholder="Enter UserName" class="form-control" name="UserName">
+              </div>
+              <button type="submit" class="btn btn-warning btn-lg">Create User</button>
+              <a href="/api/user" class="btn btn-default btn-sm">Back</a>
+          </form>
+          
+      </div>
+  </div>

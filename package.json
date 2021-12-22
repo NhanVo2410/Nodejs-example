@@ -1,0 +1,74 @@
+{
+  "name": "demo_helpdesk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "debug": "set DEBUG=web,web:* & nodemon --inspect index.js",
+    "build": "webpack",
+    "lint": "eslint .",
+    "test": " mocha 'src/test/user.test.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@syncfusion/ej2-base": "^18.3.52",
+    "@syncfusion/ej2-grids": "^18.3.53",
+    "@syncfusion/ej2-popups": "^18.3.52",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chalk": "^4.1.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "debug": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "express3-handlebars": "^0.5.2",
+    "i18n": "^0.13.2",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-simple": "^0.5.6",
+    "lodash": "^4.17.20",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.13",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "simple-odata-server": "^1.1.1",
+    "simple-odata-server-mongodb": "^1.0.0",
+    "validator": "^13.1.17",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7",
+    "should": "^13.2.3",
+    "sion": "0.0.1",
+    "supertest": "^6.0.1",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.2.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "NODE_CONFIG_DIR": "./config"
+    }
+  }
+}

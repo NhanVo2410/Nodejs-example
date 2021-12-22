@@ -1,0 +1,106 @@
+{
+    "error" :{
+        "0":{
+            "status" : 500,
+            "message" : "SERVER ERROR",
+            "key" : "SERVER_ERROR"
+        },
+        "1":{
+            "status" : 404,
+            "key" : "PROPERTIES_NOT_FOUND"
+        },
+        "2":{
+            "status" : 404,
+            "message" : "EXISTING USER",
+            "key" : "EXISTING_USER"
+        },
+        "3":{
+            "status" : 404,
+            "message" : "EXISTING TICKET",
+            "key" : "EXISTING_TICKET"
+        },
+        "4":{
+            "status" : 404,
+            "message" : "USERNAME READY EXISTS",
+            "key" : "USERNAME_READY_EXISTS"
+        },
+        "5":{
+            "status" : 401,
+            "message" : "Please verify required information",
+            "key" : "VERIFY_REQUIRED_INFORMATION"
+        },
+        "6":{
+            "status" : 404,
+            "message" : "User not exist",
+            "key" : "USER_NOT_EXIST"
+        },
+        "7":{
+            "status" : 401,
+            "message" : "Authentication failed. Wrong password",
+            "key" : "WRONG_PASSWORD"
+        },
+        "8":{
+            "status" : 401,
+            "message" : "An error was occured, please logout and authenticate again !",
+            "key" : "WRONG_SESSION"
+        },
+        "9":{
+            "status" : 401,
+            "message" : "Cannot find user with this email !",
+            "key" : "USER_EMAIL_NOT_FOUND"
+        },
+        "10":{
+            "status" : 401,
+            "message" : "An error occured when inserting user!",
+            "key" : "USER_ADD_ERROR"
+        },
+        "11":{
+            "status" : 401,
+            "message" : "An error occured when updating user!",
+            "key" : "USER_UPDATE_ERROR"
+        },
+        "12":{
+            "status" : 401,
+            "message" : "An error occured when getting user list !",
+            "key" : "USER_LIST_ERROR"
+        },
+        "13":{
+            "status" : 401,
+            "message" : "An error occured when deleting user!",
+            "key" : "USER_DELETE_ERROR"
+        },
+        "14":{
+            "status" : 404,
+            "message" : "An error occured when getting user by id !",
+            "key" : "USER_ID_ERROR"
+        },
+        "15":{
+            "status" : 404,
+            "message" : "pls make sure you pick two date",
+            "key" : "enter 2 date"
+        }
+
+    },
+    "success" :{
+        "0":{
+            "status" : 200,
+            "message" : "GET DATA SUCCESSFULLY",
+            "key" : "GET_DATA_SUCCESSFULLY"
+        },
+        "1":{
+            "status" : 200,
+            "message" : "REMOVE SUCCESSFULLY",
+            "key" : "REMOVE_SUCCESSFULLY"
+        },
+        "2":{
+            "status" : 200,
+            "message" : "UPDATE SUCCESSFULLY",
+            "key" : "UPDATE_SUCCESSFULLY"
+        },
+        "3":{
+            "status" : 201,
+            "message" : "CREATE SUCCESSFULLY",
+            "key" : "CREATE SUCCESSFULLY"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<!-- views/profile.ejs -->
+
+<div class="container">
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/auth/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+    <div class="row">
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+                <p>
+                    <strong>id</strong>: {{user._id}}<br>
+                    <strong>email</strong>: {{user.local.email}}<br>
+                    <strong>ticket</strong>: {{user.tickets}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <a href="api/user/get-ticket-by-userid/{{user._id}}" class="btn btn-default btn-sm">Watch Ticket</a>
+    <a href="/api/user" class="btn btn-default btn-sm">User List</a>
+</div>

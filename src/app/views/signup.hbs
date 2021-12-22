@@ -1,0 +1,33 @@
+  <!-- views/signup.ejs -->
+
+  <div class="container">
+      <div class="col-sm-6 col-sm-offset-3">
+          <h1><span class="fa fa-sign-in"></span>{{{__ "Signup"}}}</h1>
+                  <!-- hiển thị mọi tin nhắn được trả lại từ việc đăng nhập -->
+              {{#if message.length}}
+                  <div class="alert alert-danger">{{message}}</div>
+              {{/if}}
+          <form action="/auth/signup" method="post">
+              <div class="form-group">
+                  <label>{{{__ "Email"}}}</label>
+                  <input type="email" id="email" placeholder="Enter email" class="form-control" name="email">
+              </div>
+              <div class="form-group">
+                  <label>{{{__ "Password"}}}</label>
+                  <input type="password" id="password" placeholder="Enter password" class="form-control" name="password">
+              </div>
+              <div class="form-group">
+                  <label>{{{__ "FullName"}}}</label>
+                  <input type="text" id="FullName" placeholder="Enter FullName" class="form-control" name="FullName">
+              </div>
+              <div class="form-group">
+                  <label>{{{__ "UserName"}}}</label>
+                  <input type="text" id="UserName" placeholder="Enter UserName" class="form-control" name="UserName">
+              </div>
+              <button type="submit" class="btn btn-warning btn-lg">{{{__ "Signup"}}}</button>
+          </form>
+          <hr>
+          <p>{{{__ "Already have an account? "}}}<a href="/auth/login">{{{__ "Login"}}}</a></p>
+          <p>{{{__ "Or go"}}}<a href="/">{{{__ " home."}}}</a></p>
+      </div>
+  </div>
